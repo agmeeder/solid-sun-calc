@@ -3,5 +3,6 @@
     "composables",
     "dayjs",
     "suncalc"
-  ]
+  ],
+  "deno.enable": false
 }
