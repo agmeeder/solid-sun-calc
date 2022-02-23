@@ -1,5 +1,5 @@
 import { Component, Show } from 'solid-js'
-import useFormatters from '../composables/useFormatters'
+import useFormatters from '../../composables/useFormatters'
 
 export interface MomentProps {
 	moment?: Date
@@ -7,17 +7,17 @@ export interface MomentProps {
 	description?: string
 }
 
-const Moment: Component<MomentProps> = props => {
-	const { toTime, toDateTime } = useFormatters()
+const SunMoment: Component<MomentProps> = props => {
+	const { toTime } = useFormatters()
 
 	return (
 		<>
 			<li class='mb-6 ml-10 last:mb-4'>
-				<div class='absolute -left-24 oldstyle-nums'>{toTime(props.moment)}</div>
-				<div class='absolute w-8 h-8 rounded-full bg-yellow-400 text-cyan-700 -left-[18px] -mt-0.5 flex items-center justify-center'>
+				<div class='absolute -left-24 oldstyle-nums -mt-0.5'>{toTime(props.moment)}</div>
+				<div class='absolute w-8 h-8 rounded-full bg-sky-600 text-yellow-200 -left-[18px] -mt-0.5 flex items-center justify-center'>
 					<svg
 						xmlns='http://www.w3.org/2000/svg'
-						class=' h-5 w-5'
+						class=' h-6 w-6'
 						fill='none'
 						viewBox='0 0 24 24'
 						stroke='currentColor'>
@@ -29,7 +29,7 @@ const Moment: Component<MomentProps> = props => {
 						/>
 					</svg>
 				</div>
-				<h3 class='mt-0.5 leading-tight'>{props.label}</h3>
+				<h3 class='mt-0.5 pt-0.5 leading-tight'>{props.label}</h3>
 				<Show when={props.description}>
 					<p class='italic text-xs leading-none mt-1'>{props.description}</p>
 				</Show>
@@ -38,4 +38,4 @@ const Moment: Component<MomentProps> = props => {
 	)
 }
 
-export default Moment
+export default SunMoment

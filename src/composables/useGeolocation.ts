@@ -5,10 +5,10 @@ const useGeolocation = () => {
 		)
 	}
 
-	const getCurrentPosition = async () => {
+	const getCurrentPosition = async (options?: PositionOptions) => {
 		if (navigator.geolocation) {
 			try {
-				const position = await getPosition()
+				const position = await getPosition(options)
 				return position
 			} catch (err) {
 				return undefined
