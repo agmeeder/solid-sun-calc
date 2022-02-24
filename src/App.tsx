@@ -10,8 +10,8 @@ const App: Component = () => {
 
 	return (
 		<>
-			<div class='w-full flex flex-col min-h-screen p-4 bg-yellow-50'>
-				<h1 class='text-2xl'>Zontijden</h1>
+			<div class='w-full flex flex-col items-center min-h-screen p-4 bg-yellow-50'>
+				<h1 class='text-4xl font-bold text-gray-600 mb-4'>Zontijden</h1>
 				<div class='flex-1 flex flex-col items-center justify-center'>
 					<Show when={sunTimes()}>
 						<div class='w-full md:w-3/4 lg:w-2/3 xl:w-1/2 2xl:w-1/3'>

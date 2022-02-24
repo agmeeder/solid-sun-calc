@@ -7,8 +7,8 @@ const SunVisual: Component<SunTimesProps> = ({ sunTimes }) => {
 
 	return (
 		<>
-			<svg class='w-full shadow-lg rounded-full' viewBox='-225 -225 450 450'>
-				<circle class='fill-yellow-100' r='225' />
+			<svg class='w-full shadow-lg rounded-full' viewBox='-200 -200 400 400'>
+				<circle class='fill-yellow-100' r='200' />
 				<circle class='fill-yellow-500' r='145' />
 
 				<path class='fill-yellow-400' d='M0,0 L-142,-30 A-145,-145 1 0,1 142,-30 z' />
@@ -24,7 +24,7 @@ const SunVisual: Component<SunTimesProps> = ({ sunTimes }) => {
 				<text class='day--label font-bold' x='-12' y='-75'>
 					DAY
 				</text>
-				<text class='night--label font-bold' x='-14' y='80'>
+				<text class='night--label font-bold' x='-18' y='80'>
 					NIGHT
 				</text>
 				<text class='day--label' x='-20' y='-4'>
@@ -34,45 +34,45 @@ const SunVisual: Component<SunTimesProps> = ({ sunTimes }) => {
 				<text class='day--label' x='-142' y='4' transform='rotate(18, 0,0)'>
 					golden hour
 				</text>
-				<text class='time' x='-210' y='0' transform='rotate(22, 0,0)'>
+				<text class='time' x='-185' y='0' transform='rotate(22, 0,0)'>
 					{toTime(sunTimes.goldenHour)}
 				</text>
 
-				<text class='time' x='-210' y='0' transform='rotate(11, 0,0)'>
+				<text class='time' x='-185' y='0' transform='rotate(11, 0,0)'>
 					{toTime(sunTimes.sunsetStart)}
 				</text>
 				<text class='day--label' x='-141' y='2' transform='rotate(6, 0,0)'>
 					sunset
 				</text>
-				<text class='time' x='-210' y='2'>
+				<text class='time' x='-185' y='2'>
 					{toTime(sunTimes.sunset)}
 				</text>
 
 				<text class='night--label' x='-140' y='0' transform='rotate(-8, 0,0)'>
 					civil
 				</text>
-				<text class='time' x='-210' y='0' transform='rotate(-14, 0,0)'>
+				<text class='time' x='-185' y='0' transform='rotate(-14, 0,0)'>
 					{toTime(sunTimes.dusk)}
 				</text>
 
 				<text class='night--label' x='-140' y='0' transform='rotate(-20, 0,0)'>
 					nautical
 				</text>
-				<text class='time' x='-210' y='0' transform='rotate(-25, 0,0)'>
+				<text class='time' x='-185' y='0' transform='rotate(-25, 0,0)'>
 					{toTime(sunTimes.nauticalDusk)}
 				</text>
 
 				<text class='night--label' x='-140' y='0' transform='rotate(-32, 0,0)'>
 					astronomical
 				</text>
-				<text class='time' x='-212' y='0' transform='rotate(-38, 0,0)'>
+				<text class='time' x='-185' y='0' transform='rotate(-38, 0,0)'>
 					{toTime(sunTimes.night)}
 				</text>
 
 				<text class='day--label' x='-15' y='-130'>
 					noon
 				</text>
-				<text class='time' x='-30' y='-155'>
+				<text class='time' x='-18' y='-155'>
 					{toTime(sunTimes.solarNoon)}
 				</text>
 
@@ -117,7 +117,7 @@ const SunVisual: Component<SunTimesProps> = ({ sunTimes }) => {
 				<text class='night--label' x='-22' y='138' transform='rotate(0, 0,0)'>
 					midnight
 				</text>
-				<text class='time' x='-25' y='165'>
+				<text class='time' x='-16' y='163'>
 					{toTime(sunTimes.nadir)}
 				</text>
 			</svg>

@@ -3,7 +3,7 @@ import 'dayjs/locale/nl'
 
 const useFormatters = () => {
 	const toTime = (date: Date | undefined) => {
-		if (date) return dayjs(date).locale('nl').format('H:mm:ss')
+		if (date) return dayjs(date).locale('nl').format('HH:mm')
 		return ''
 	}
 	const toDateTime = (date: Date | undefined) => {
