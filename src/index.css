@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+	.day--label {
+		@apply text-xs fill-gray-600;
+	}
+	.night--label {
+		@apply text-xs fill-white;
+	}
+	.time {
+		@apply fill-gray-600 oldstyle-nums text-xs font-mono;
+	}
+}
