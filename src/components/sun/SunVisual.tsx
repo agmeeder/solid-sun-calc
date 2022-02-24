@@ -41,7 +41,7 @@ const SunVisual: Component<SunTimesProps> = ({ sunTimes }) => {
 				<text class='time' x='-210' y='0' transform='rotate(11, 0,0)'>
 					{toTime(sunTimes.sunsetStart)}
 				</text>
-				<text class='day--label' x='-140' y='0' transform='rotate(5, 0,0)'>
+				<text class='day--label' x='-141' y='2' transform='rotate(6, 0,0)'>
 					sunset
 				</text>
 				<text class='time' x='-210' y='2'>
@@ -86,7 +86,7 @@ const SunVisual: Component<SunTimesProps> = ({ sunTimes }) => {
 					{toTime(sunTimes.sunriseEnd)}
 				</text>
 
-				<text class='day--label' x='104' y='-7'>
+				<text class='day--label' x='104' y='2' transform='rotate(-6, 0,0)'>
 					sunrise
 				</text>
 				<text class='time' x='150' y='2'>
