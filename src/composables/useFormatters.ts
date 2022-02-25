@@ -11,7 +11,17 @@ const useFormatters = () => {
 		return ''
 	}
 
-	return { toTime, toDateTime }
+	const toHourDuration = (minutes: number) => {
+		if (minutes) {
+			const h = Math.floor(minutes / 60)
+			const m = Math.floor(minutes - h * 60)
+			const s = Math.floor(minutes - h * 60 + m)
+			return `${h.toString().padStart(2, '0')}:${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`
+		}
+		return ''
+	}
+
+	return { toTime, toDateTime, toHourDuration }
 }
 
 export default useFormatters

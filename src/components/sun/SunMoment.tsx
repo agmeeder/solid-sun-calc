@@ -14,7 +14,7 @@ const SunMoment: Component<MomentProps> = props => {
 		<>
 			<li class='mb-6 ml-7 last:mb-4'>
 				<div class='absolute -left-20 font-mono oldstyle-nums'>{toTime(props.moment)}</div>
-				<div class='absolute w-8 h-8 rounded-full bg-blue-800 text-yellow-100 -left-[16px] -mt-0.5 flex items-center justify-center'>
+				<div class='absolute w-8 h-8 rounded-full bg-blue-800 text-yellow-100 -left-[17px] -mt-0.5 flex items-center justify-center'>
 					<svg
 						xmlns='http://www.w3.org/2000/svg'
 						class=' h-6 w-6'
