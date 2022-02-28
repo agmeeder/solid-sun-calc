@@ -22,7 +22,7 @@ const App: Component = () => {
 
 	return (
 		<>
-			<div class='w-full flex flex-col items-center min-h-screen p-4 bg-yellow-50'>
+			<div class='w-full flex flex-col items-center min-h-screen p-4 bg-yellow-50 select-none'>
 				<h1 class='text-4xl font-bold text-gray-600 mb-4'>Sun times</h1>
 				<div class='flex-1 flex flex-col items-center justify-center'>
 					<Show when={sunTimes()}>
@@ -34,11 +34,11 @@ const App: Component = () => {
 						</div> */}
 					</Show>
 					<Show when={sunTimes() && durations()}>
-						<div>Zonsopkomst: {toHourDuration(durations()!.sunRiseDuration)}</div>
-						<div>Gouden uur ochtend: {toHourDuration(durations()!.goldenHourMorning)}</div>
+						<div>Zonsopkomst: {toHourDuration(durations()!.morningSunRise)}</div>
+						<div>Gouden uur ochtend: {toHourDuration(durations()!.morningGoldenHour)}</div>
 						<div>Dag: {toHourDuration(durations()!.dayDuration)}</div>
-						<div>Gouden uur avond: {toHourDuration(durations()!.goldenHourEvening)}</div>
-						<div>Zonsondergang: {toHourDuration(durations()!.sunSetDuration)}</div>
+						<div>Gouden uur avond: {toHourDuration(durations()!.eveningGoldenHour)}</div>
+						<div>Zonsondergang: {toHourDuration(durations()!.eveningSunSet)}</div>
 					</Show>
 				</div>
 			</div>
